@@ -8,7 +8,27 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #87CEEB;
+      background: url('logo.jpg') center/cover fixed;
+      backdrop-filter: blur(5px);
+      animation: changeBackground 15s linear infinite;
+    }
+
+    @keyframes changeBackground {
+      0% {
+        background-image: url('logo.jpg');
+      }
+      25% {
+        background-image: url('10.jpg');
+      }
+      50% {
+        background-image: url('11.jpg');
+      }
+      75% {
+        background-image: url('12.jpg');
+      }
+      100% {
+        background-image: url('13.jpg');
+      }
     }
 
     .menu {
@@ -22,26 +42,55 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 120px; 
-      height: 120px; 
+      width: 150px; 
+      height: 150px; 
       border-radius: 50%;
-      margin: 0 10px;
-      background-color: #ffffff;
-      text-decoration: none;
+      margin: 0 20px; 
       overflow: hidden;
+      position: relative;
+      cursor: pointer;
     }
 
     .menu-button img {
-      width: 100%;
+      width: 90%;
       height: auto;
       border-radius: 50%; 
     }
 
-    .menu-button:hover {
-      background-color: #ecf0f1;
+    .menu-button::before {
+      content: "";
+      position: absolute;
+      top: -5%;
+      left: -5%;
+      width: 110%;
+      height: 110%;
+      border: 5px solid transparent;
+      border-radius: 50%;
+      background: linear-gradient(45deg, blue, yellow, red, blue, yellow, red);
+      animation: rotateColors 3s linear infinite;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s;
     }
 
-    @media (max-width: 600px) {
+    .menu-button:hover::before {
+      opacity: 1;
+    }
+
+    @keyframes rotateColors {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .menu-button:hover {
+      background-color: transparent;
+    }
+
+    @media (max-width: 800px) {
       .menu {
         flex-direction: column;
       }
@@ -59,4 +108,5 @@
 
 </body>
 </html>
+
 
