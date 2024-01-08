@@ -1,81 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Personal</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #87CEEB;
-      color: #333;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: left;
-    }
-
-    .profile {
-      flex: 1;
-      margin-right: 20px;
-      text-align: center;
-    }
-
-    .profile img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-
-    .personal-info {
-      flex: 1;
-      margin-bottom: 20px;
-    }
-
-    .back-button {
-      display: block;
-      padding: 10px 20px;
-      background-color: #3498db;
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .back-button:hover {
-      background-color: #2980b9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG SANTIAGO PEREZ</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">PORT<span>A</span>FO<span>LIO</span></h2>
+        </nav>
+    
+        <div class="content">
+            <h4>Hola, mi nombre es</h4>
+            <h1>Santiago Pérez</h1>
+            <h3>Soy estudiante de la Universidad Tecnica de Cotopaxi</h3>
+        </div>
+|   </div>
+    
+    <section class="about">
+        <div class="main">
+            <img src="/7.jpg">
+            <div class="about-text">
+                <h2>SOBRE MI</h2>
+                <h5>Estudiante de sistemas <span>y Diseñador</span></h5>
+                <p>Soy estudiante de sistemas en la Universidad Técnica de Cotopaxi, tengo 20 años, me gustan los videojuegos, la lectura y la música.</p>
+                <p>Odio muchas cosas y por lo general me estreso muy rapido de las personas</p>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
-  <div class="profile">
-    <img src="2.jpg" alt="Tu Imagen">
-  </div>
+    <div class="service">
+        <div class="title">
+            <h2>Info Random</h2>
+        </div>
 
-  <div class="personal-info">
-    <h2> Santiago Javier Pérez Cangas</h2>
-    <p> Soy estudiante de sistemas, tengo 20 años, me gustan los videojuegos, la lectura y la música.</p>
-    <p>Ubicación: Santo Domingo</p>
-    <p>Email: santy12123@gmail.com</p>
-  </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bowl-food"></i>
+                <h5>Comida Favorita</h5>
+                <div class="pra">
+                    <p>Pasta</p>
+                    <p>Pizza</p>
+                    <p>Comida italiana</p>
+                    <p>Comida mexicana</p>
+                    <p>Paella</p>
+                    <p style="text-align: center;"></p>
+                </div>
+            </div>
 
-  <a href="index.html" class="back-button">Regresar</a>
-</div>
+            <div class="card">
+                <i class="far fa-user"></i>
+                <h5>Videojuegos Favoritos</h5>
+                <div class="pra">
+                    <p>Mortal Kombat</p>
+                    <p>Minecraft</p>
+                    <p>Assassins Creed</p>
+                    <p>God of War</p>
+                    <p>Devil May Cry</p>
+                    <p style="text-align: center;"></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="far fa-bell"></i>
+                <h5>Libros Favoritos</h5>
+                <div class="pra">
+                    <p>Psicologia Oscura</p>
+                    <p>El arte de la guerra</p>
+                    <p>Harry Potter</p>
+                    <p>Antes de diciembre</p>
+                    <p>48 leyes del poder</p>
+                    <p style="text-align: center;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="contact-me">
+
+    </div>
 </body>
 </html>
