@@ -42,19 +42,21 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 150px; 
-      height: 150px; 
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      margin: 0 20px; 
+      margin: 0 20px;
       overflow: hidden;
       position: relative;
       cursor: pointer;
+      filter: blur(5px);
+      pointer-events: none; 
     }
 
     .menu-button img {
       width: 90%;
       height: auto;
-      border-radius: 50%; 
+      border-radius: 50%;
     }
 
     .menu-button::before {
@@ -90,10 +92,58 @@
       background-color: transparent;
     }
 
-    @media (max-width: 800px) {
-      .menu {
-        flex-direction: column;
+    .login-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .login-box {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      animation: slideIn 0.5s ease-out;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translate(0%, 50%);
+        opacity: 0;
       }
+      100% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+      }
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .error-message {
+      color: red;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -106,7 +156,36 @@
   <a href="4.html" class="menu-button"><img src="4.jpg" alt="Imagen 4"></a>
 </div>
 
+<div class="login-container">
+  <div class="login-box">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="username" placeholder="Usuario">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
+    <p id="error-message" class="error-message"></p>
+  </div>
+</div>
+<script>
+  function login() {
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var errorMessage = document.getElementById('error-message');
+
+    if (username === 'grupo' && password === '123456') {
+      alert('Inicio de sesión exitoso');
+      document.querySelector('.login-container').style.display = 'none';
+      var buttons = document.querySelectorAll('.menu-button');
+      buttons.forEach(function(button) {
+        button.style.pointerEvents = 'auto';
+        button.style.filter = 'none'; 
+      });
+    } else {
+      errorMessage.textContent = 'Usuario o contraseña incorrectos';
+      document.getElementById('username').value = '';
+      document.getElementById('password').value = '';
+    }
+  }
+</script>
 </body>
 </html>
-
 
