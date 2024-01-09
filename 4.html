@@ -1,81 +1,87 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Perfil</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #87CEEB;
-      color: #333;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: left;
-    }
-
-    .profile {
-      flex: 1;
-      margin-right: 20px;
-      text-align: center;
-    }
-
-    .profile img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-
-    .personal-info {
-      flex: 1;
-      margin-bottom: 20px;
-    }
-
-    .back-button {
-      display: block;
-      padding: 10px 20px;
-      background-color: #3498db;
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .back-button:hover {
-      background-color: #2980b9;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG SANTIAGO PEREZ</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="hero">
+        <nav>
+            <h2 class="logo">PORT<span>A</span>FO<span>LIO</span></h2>
+        </nav>
+    
+        <div class="content">
+            <h4>Hola, mi nombre es</h4>
+            <h1>Jean Basantes</h1>
+            <h3>Soy estudiante de la Universidad Tecnica de Cotopaxi</h3>
+        </div>
+|   </div>
+    
+    <section class="about">
+        <div class="main">
+            <img src="8.jpg">
+            <div class="about-text">
+                <h2>SOBRE MI</h2>
+                <h5>Estudiante de sistemas <span>y Aficionado del Fútbol</span></h5>
+                <p>Soy estudiante de sistemas en la Universidad Técnica de Cotopaxi, tengo 22 años, me gustan los videojuegos.</p>
+                <p>Soy una persona muy divertida y amigable en la cual ecuentras un gran amigo.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
-  <div class="profile">
-    <img src="4.jpg" alt="Tu Imagen">
-  </div>
+    <div class="service">
+        <div class="title">
+            <h2>Info Random</h2>
+        </div>
 
-  <div class="personal-info">
-    <h2>BASANTES VALLA JEAN PIERRE</h2>
-    <p>Hola soy estudiante de la prestigiosa Universidad Tecnica de Cotopaxi, en la cual curso el Quinto semestre de la carrera de Sistemas y tengo 21años.</p>
-    <p>Soy de la Ciudad de Quito pero actualmente resido en Latacunga en el sector de San Felipe</p>
-    <p>Email: jeanpierre.b.v27@gmail.com</p>
-  </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bowl-food"></i>
+                <h5>Comida Favorita</h5>
+                <div class="pra">
+                    <p>Lasaña de pulpo</p>
+                    <p>Hamburguesas</p>
+                    <p>Helado</p>
+                    <p>Encebollado</p>
+                    <p>Chaulafan</p>
+                    <p style="text-align: center;"></p>
+                </div>
+            </div>
 
-  <a href="index.html" class="back-button">INICIO</a>
-</div>
+            <div class="card">
+                <i class="far fa-user"></i>
+                <h5>Peliculas Favoritas</h5>
+                <div class="pra">
+                    <p>Rápidos y Furiosos</p>
+                    <p>Dead Pool</p>
+                    <p>Spiderman</p>
+                    <p>Your Name</p>
+                    <p>El pianista</p>
+                    <p style="text-align: center;"></p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <i class="far fa-bell"></i>
+                <h5>Juegos Favoritos</h5>
+                <div class="pra">
+                    <p>FIFA</p>
+                    <p>Fornite</p>
+                    <p>GTA V</p>
+                    <p>Valorant</p>
+                    <p>Dota 2</p>
+                    <p style="text-align: center;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="contact-me">
+
+    </div>
 </body>
 </html>
