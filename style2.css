@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+ }
+body{
+    background-color: rgba(0, 2, 7, 0.98);
+}
+ .hero{
+    height: 100vh;
+    width: 50%;
+    background-image: url(4.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+ }
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+ }
+ .logo{
+    color: white;
+    font-size: 55px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ span{
+    color: #f9004d;
+ }
+ .content{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%)
+ }
+ h1{
+    color: white;
+    margin: 30px 0px 30px;
+    font-size: 95px;
+ }
+ h3{
+    color: white;
+    margin: 35px;
+    margin-bottom: 60px;
+    font-size: 30px;
+ }
+ h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 40px;
+ }
+ .about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+ }
+ .about img{
+    height: auto;
+    width: 430px;
+ }
+ .about-text{
+    width: 550px;
+ }
+ .main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+ }
+ .about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+ }
+ .about-text p{
+    color:#fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+ }
+ .service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+ }
+ .title h2{
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+ }
+ .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+ }
+ .card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+ }
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
